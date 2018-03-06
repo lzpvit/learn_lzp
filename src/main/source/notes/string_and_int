@@ -1,0 +1,20 @@
+1 如何将字串 String 转换成整数 int
+ 有两个方法:
+1). int i = Integer.parseInt([String]);
+
+ i = Integer.parseInt([String],[int radix]);
+ int radix的意思是前面的String为该进制的数，若为2
+ 则将String看做2进制的数对应的字符串（eg:1001111），将值转化为十进制的int给i
+ radix默认为10
+
+2). int i = Integer.valueOf(my_str).intValue();
+
+2 如何将整数 int 转换成字串 String 
+A. 有叁种方法:
+1.) String s = String.valueOf(i);
+2.) String s = Integer.toString(i);
+3.) String s = "" + i;
+注: Double, Float, Long 转成字串的方法大同小异.
+
+
+

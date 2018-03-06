@@ -1,0 +1,9 @@
+Lzp8碰到阶乘这样的大数运算 需要先将int转double，再将结果转int
+
+/********************int  to double **************************/
+int a=5;
+double b =a;即可
+
+/******************** double to int **************************/
+double a=3.25;
+int a =new Double(a).intValue();
