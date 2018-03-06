@@ -10,7 +10,7 @@ public class Lzp14 {
     public ListNode ReverseList(ListNode head) {
         if (head == null) return head;
         if (head.next == null) return head;
-        ListNode tmp = ReverseList(head.next);
+        ListNode tmp = ReverseList(head.next);//一直递归调用，tmp最初的值是链表末尾的值
         //我自己写的下面一句跟他不一样
         // tmp.next = head;
         head.next.next = head;//相当于把后面的链表翻转后将head放到最后去，而我之前用tmp   则是在后面链表的前面操作，不合理
